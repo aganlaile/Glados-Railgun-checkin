@@ -6,7 +6,7 @@ on:
 # 说明：GLaDOS 签到链路已加入 Cloudflare Turnstile，纯 HTTP 的 Actions 无法通过，
 # 定时签到已关闭，改由浏览器扩展（E:\AI\code\proxy\glados-extension）完成。
 # 这里仅保留手动触发，用于临时排查或验证脚本改动。
-# 定时与手动触发可能重叠：同一时间只保留一个运行，避免重复签到与重复推送
+# 手动多次触发可能重叠：同一时间只保留一个运行，避免重复签到与重复推送
 concurrency:
   group: glados-checkin
   cancel-in-progress: false
